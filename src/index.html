@@ -8,6 +8,45 @@
 </head>
 
 <body>
+  <header>
+    <h1>Analizador de texto</h1>
+  </header>
+  
+  <p>Esta es una herramienta que te permite contar la cantidad de palabras, números y caracteres que posee un texto.</p>
+  <textarea name="user-input" rows="20" cols="50" placeholder="Comienza a escribir un texto aqui..."></textarea>
+  <ul>
+    <li data-testing="word-count">
+      <span data-testing="word-count-badge"></span>
+      Palabras
+    </li>
+    <li data-testing="character-count">
+      <span data-testing="character-count-badge">0</span>
+      Caracteres (con espacios)
+    </li>
+    <li data-testing="character-no-spaces-count">
+      <span data-testing="character-no-spaces-count-badge">0</span>
+      Caracteres (sin espacios)
+    </li>
+    <li data-testing="number-count">
+      <span data-testing="number-count">0</span>
+      Números
+    </li>
+    <li data-testing="number-sum">
+      <span data-testing="number-sum">0</span>
+      Suma Total Números
+    </li>
+    <li data-testing="word-length-average">
+      <span data-testing="word-length-average">0</span>
+      Longitud Media de las Palabras
+    </li>
+  </ul>
+
+  <button id="reset-button">Limpiar</button>
+  <footer>
+    <p>Desarrollado por Linda Reyes</p>
+  </footer>
   <script src="index.js" type="module"></script>
+
 </body>
+
 </html>
