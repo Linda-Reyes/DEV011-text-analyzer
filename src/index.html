@@ -17,15 +17,15 @@
 
     <p>Esta herramienta analiza el texto ingresando, realizando el conteo de la cantidad de palabras, números y caracteres.</p>
 
-    <textarea name="user-input" rows="20" cols="50" placeholder="Comienza a escribir un texto aqui..."></textarea>
+    <textarea name="user-input" placeholder="Comienza a escribir un texto aqui..."></textarea>
 
     <ul>
       <li class="word-count styleli" data-testing="word-count">
-        <span data-testing="word-count-badge">  </span>
+        <span data-testing="word-count-badge">0</span>
         Palabras
       </li>
       <li class="character-count styleli" data-testing="character-count">
-        <span data-testing="character-count-badge">  </span>
+        <span data-testing="character-count-badge">0</span>
         Caracteres (con espacios)
       </li>
       <li class="character-no-spaces-count styleli" data-testing="character-no-spaces-count">
@@ -40,20 +40,20 @@
         <span data-testing="number-sum">0</span>
         Suma Total Números
       </li>
-      <li class="ord-length-average styleli" data-testing="word-length-average">
+      <li class="word-length-average styleli" data-testing="word-length-average">
         <span data-testing="word-length-average">0</span>
         Longitud Media de las Palabras
       </li>
     </ul>
 
-    <button id="reset-button">Limpiar</button>
+    <button id="reset-button">Reset</button> 
 
   <!--<div class="clearfix"></div>-->
 
     <footer>
       <p>Desarrollado por Linda Reyes</p>
     </footer>
-  </div>
+  <!--</div>-->
 
   <script src="index.js" type="module"></script>
 

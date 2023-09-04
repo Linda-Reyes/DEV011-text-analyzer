@@ -2,7 +2,8 @@ body {
     color:#333; /* color texto del body que no tiene una ref especifica */
     background-color:rgb(238, 228, 214); /* color del fondo */
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    width: 80%;
+    margin: 0 auto;
 }
 header h1 {
     background: rgb(141, 114, 91);/* color al fondo */
@@ -18,9 +19,13 @@ header h1 {
 
 textarea {
     float: left;
-    width: 70%;
-    /*width:calc(70% - 40px);
-    padding: 40px;*/
+    width: 50%;
+    height: 80%;
+    padding: 40px;
+    margin: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+
 }
 ul li {
     float: left;
@@ -38,11 +43,18 @@ ul li {
     border-bottom: 1px solid rgb(109, 61, 32);
 }
 
+footer {
+
+    position: absolute;
+    bottom: 0%;
+    width: 80%;
+}
+
 footer p {
     background: rgb(141, 114, 91);/* color al fondo */
     height: 50px; /* altura de la caja */
     border: 5px rgb(141, 114, 91) solid;/* crea borde (tamaño, color) */
     line-height: 50px; /* centra vertical, medida alto caja */
     text-align: center; /* centra texto horizontal */
-    color:rgba(232, 225, 215, 0.922)
+    color:rgba(232, 225, 215, 0.922);
 }
