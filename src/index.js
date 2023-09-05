@@ -7,27 +7,34 @@ const wordCountBadge = document.querySelector('span[data-testing="word-count-bad
 const characterCountBadge = document.querySelector('span[data-testing="character-count-badge"]')
 const characterNoSpacesCountBadge = document.querySelector('span[data-testing="character-no-spaces-count-badge"]')
 const numberCountBadge = document.querySelector('span[data-testing="number-count"]')
+const numberSumBadge = document.querySelector('span[data-testing="number-sum"]')
+const wordLengthAverageBadge = document.querySelector('span[data-testing="word-length-average"]')
 
 //let WordCount = analyzer.getWordCount(textarea.value)
-textarea.addEventListener("input",()=>{
+textarea.addEventListener("keyup",()=>{
   const words = analyzer.getWordCount(textarea.value)
   wordCountBadge.textContent= words;
   const characters = analyzer.getCharacterCount(textarea.value)
   characterCountBadge.textContent= characters;
   const characterNoSpaces = analyzer.getCharacterCountExcludingSpaces(textarea.value)
-  characterNoSpacesCountBadge.textContent= characterNoSpaces
+  characterNoSpacesCountBadge.textContent= characterNoSpaces;
   const numbers = analyzer.getNumberCount(textarea.value)
-  numberCountBadge.textContent= numbers
+  numberCountBadge.textContent= numbers;
+  const numberSum = analyzer.getNumberSum(textarea.value)
+  numberSumBadge.textContent= numberSum;
+  const AverageLength = analyzer.getAverageWordLength(textarea.value)
+  wordLengthAverageBadge.textContent= AverageLength;
 })
 
 const textInput = document.getElementsByName('user-input')[0];
-const resetButton = document.querySelector('#reset-button');
-const list = document.querySelector('span [data-testing]');
+const resetButton = document.getElementById('reset-button');
 
 resetButton.addEventListener('click', () => {
-  textInput.value = '0';
+  textInput.value = '';
   wordCountBadge.textContent= '0';
   characterCountBadge.textContent= '0';
   characterNoSpacesCountBadge.textContent= '0';
   numberCountBadge.textContent= '0';
+  numberSumBadge.textContent= '0';
+  wordLengthAverageBadge.textContent= '0';
 });
