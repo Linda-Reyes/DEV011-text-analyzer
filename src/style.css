@@ -85,9 +85,7 @@ ul li .styleli{
     background-color: #ded6d2fd;
 }
 footer {
-    position: absolute;
-    bottom: 0%;
-    width: 80%;
+    width: 100%;
 }
 footer p {
     background: rgb(125, 100, 80);/* color al fondo */
