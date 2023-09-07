@@ -85,7 +85,11 @@ ul li .styleli{
     background-color: #ded6d2fd;
 }
 footer {
-    width: 100%;
+    width: 80%;
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+    text-align: center;   
 }
 footer p {
     background: rgb(125, 100, 80);/* color al fondo */
