@@ -8,52 +8,44 @@
 </head>
 
 <body>
-  <!--<div id="container">-->
-    <header>
-      <h1>Analizador de texto</h1>
-    </header>
+  <header>
+    <h1>Analizador de texto</h1>
+  </header>
     
-    <!--<div class="clearfix"></div>-->
-
-    <p>Esta herramienta analiza el texto ingresando, realizando el conteo de la cantidad de palabras, números y caracteres.</p>
-
-    <textarea name="user-input" placeholder="Comienza a escribir un texto aqui..."></textarea>
-
-    <ul>
-      <li class="word-count styleli" data-testing="word-count">
-        <span data-testing="word-count-badge">0</span>
-        Palabras
-      </li>
-      <li class="character-count styleli" data-testing="character-count">
-        <span data-testing="character-count-badge">0</span>
-        Caracteres (con espacios)
-      </li>
-      <li class="character-no-spaces-count styleli" data-testing="character-no-spaces-count">
-        <span data-testing="character-no-spaces-count-badge">0</span>
-        Caracteres (sin espacios)
-      </li>
-      <li class="number-count styleli" data-testing="number-count">
-        <span data-testing="number-count">0</span>
-        Números
-      </li>
-      <li class="number-sum styleli" data-testing="number-sum">
-        <span data-testing="number-sum">0</span>
-        Suma Total Números
-      </li>
-      <li class="word-length-average styleli" data-testing="word-length-average">
-        <span data-testing="word-length-average">0</span>
-        Longitud Media de las Palabras
-      </li>
-    </ul>
-
-    <button id="reset-button">Reset</button> 
-
-  <!--<div class="clearfix"></div>-->
-
-    <footer>
-      <p>Desarrollado por Linda Reyes</p>
-    </footer>
-  <!--</div>-->
+  <div class="main">
+    <div class="main-container">
+      <p>Esta herramienta analiza el texto ingresando, realizando el conteo de la cantidad de palabras, números y caracteres.</p>
+      <textarea name="user-input" placeholder="Comienza a escribir un texto aqui..."></textarea>
+      <button id="reset-button">Reset</button> 
+    </div>
+    
+    <div class="side-container">
+      <ul>
+        <li class="styleli" data-testing="word-count">
+          0 Palabras 
+        </li>
+        <li class="styleli One" data-testing="character-count"> 
+          0 Caracteres (con espacios)
+        </li>
+        <li class="styleli" data-testing="character-no-spaces-count">
+          0 Caracteres (sin espacios)
+        </li>
+        <li class="styleli One" data-testing="number-count">
+          0 Números
+        </li>
+        <li class="styleli" data-testing="number-sum">
+          0 Suma Total Números
+        </li>
+        <li class="styleli One" data-testing="word-length-average">
+          0 Longitud Media de las Palabras
+        </li>
+      </ul>
+    </div>
+  </div>
+    
+  <footer>
+    <p>Desarrollado por Linda Reyes</p>
+  </footer>
 
   <script src="index.js" type="module"></script>
 
