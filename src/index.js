@@ -3,12 +3,12 @@ import analyzer from './analyzer.js';
 //TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
 
 const textarea = document.querySelector('textarea[placeholder="Comienza a escribir un texto aqui..."]');
-const wordCount = document.querySelector('li[data-testing="word-count"]') /* Hago referencia al elemento de HTML, paramanipularlo desde JS*/
-const characterCount = document.querySelector('li[data-testing="character-count"]')
-const characterNoSpacesCount = document.querySelector('li[data-testing="character-no-spaces-count"]')
-const numberCount = document.querySelector('li[data-testing="number-count"]')
-const numberSumTotal = document.querySelector('li[data-testing="number-sum"]')
-const wordLengthAverage = document.querySelector('li[data-testing="word-length-average"]')
+const wordCount = document.querySelector('li[data-testid="word-count"]') /* Hago referencia al elemento de HTML, paramanipularlo desde JS*/
+const characterCount = document.querySelector('li[data-testid="character-count"]')
+const characterNoSpacesCount = document.querySelector('li[data-testid="character-no-spaces-count"]')
+const numberCount = document.querySelector('li[data-testid="number-count"]')
+const numberSumTotal = document.querySelector('li[data-testid="number-sum"]')
+const wordLengthAverage = document.querySelector('li[data-testid="word-length-average"]')
 
 //let WordCount = analyzer.getWordCount(textarea.value)
 textarea.addEventListener("keyup",()=>{
@@ -26,11 +26,10 @@ textarea.addEventListener("keyup",()=>{
   wordLengthAverage.textContent= AverageLength + " Longitud media de palabras";
 })
 
-const textInput = document.getElementsByName('user-input')[0];
 const resetButton = document.getElementById('reset-button');
 
 resetButton.addEventListener('click', () => {
-  textInput.value = '';
+  textarea.value = '';
   wordCount.textContent= '0 Palabras';
   characterCount.textContent= '0 Caracteres (con espacios)';
   characterNoSpacesCount.textContent= '0 Caracteres (sin espacios, ni signos)"';
