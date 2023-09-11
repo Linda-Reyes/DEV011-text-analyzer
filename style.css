@@ -1,57 +1,58 @@
 body {
     box-sizing: border-box;
-    color:#333; /* color texto del body que no tiene una ref especifica */
+    color:#333;
     background-color:rgb(224, 218, 206); /* color del fondo */
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 80%;
     margin: 0 auto;
 }
 header {
-    background-color: rgb(135, 110, 88);/* color al fondo */
+    background-color: rgb(53, 116, 122);/* color al fondo */
     height: 100px; /* altura de la caja */
     padding: 10px;
-    border: 5px rgb(141, 114, 91) solid;/* crea borde (tamaño, color) */
+    border: 5px rgb(39, 92, 100) solid;/* crea borde (tamaño, color) */
+    margin: auto;
 }
 header h1 {
     text-align: center; /* centra ancho texto  */
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* fuente */
-    font-size: 2rem;
-    color: #fff; /* color al texto */
+    font-size: 1.5rem;
+    color: #efe9e3; /* color al texto */
     line-height: 100px; /* centra altura, medida alto caja */
 }
-.main{
+#main{
     display: flex;
 }
-.main-container{
+#main-container{
     display: flex;
     flex-direction: column;
     width: 65%;
 }
-.side-container{
+#side-container{
     display: flex;
     flex-direction: column;
     width: 35%;
     
 }
 textarea[name="user-input"] {
-    border: 2px solid rgba(136, 97, 67, 0.932);
-    float: left;
-    width: 80%;
-    height:250px;
-    padding: 40px;
+    border: 2px solid rgba(50, 126, 123, 0.932);
+    width: 75%;
+    height: 130px;
+    padding: 35px;
     border-radius: 20px; 
-    margin: 40px;
+    margin: 35px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12pt;
+    color: #4d3d35;
 }
 #reset-button {
-    background-color:rgb(214, 180, 141);
-    color: #4e3f36;
+    background-color:rgb(110, 86, 60);
+    color: #efe9e5;
     padding: 5px 10px;
-    border: 2px solid rgb(67, 45, 29);
+    border: 1px solid rgb(67, 45, 29);
     border-radius: 5px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     width: 25%;
     margin: 0 auto;
 }
@@ -59,30 +60,22 @@ ul{
     margin: 70px auto;
     width: 100%;
 }
-ul li {
-    list-style: none;/*quita elpunto del li*/
-    text-align: center;
-    width: 80%;
-}
-li {
-    border: 1px solid #ccc;
-    margin: 10px;
-    padding: 10px;
-    border-radius:10px; 
-    background-color:rgb(210, 193, 168); 
-}
+
 .styleli{
-    color:#492e21;
-    margin: 10px;
-    padding: 5px 10px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
     border: 1px solid #7b543ff6;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgb(109, 61, 32);
+    border-radius: 10px;
+    text-align: center;
+    background-color:#ddc9bb;
+    color:#44291c;
+    font-size: 1rem;
+    list-style: none;/*quita elpunto del li*/   
 }
-ul li .styleli{
-    background-color: #ded6d2fd;
+.styleli:hover{
+    color: rgb(37, 125, 133);
 }
 footer {
     width: 80%;
@@ -92,7 +85,7 @@ footer {
     text-align: center;   
 }
 footer p {
-    background: rgb(125, 100, 80);/* color al fondo */
+    background: rgb(53, 116, 122);/* color al fondo */
     height: 50px; /* altura de la caja */
     border: 5px rgb(141, 114, 91) solid;/* crea borde (tamaño, color) */
     line-height: 50px; /* centra vertical, medida alto caja */
